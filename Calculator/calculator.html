@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="container">
+         <form> 
+            <div class="row">
+                <input class="textbox" type="text" name="hello">
+            </div>
+            <div class="row">
+                <div>
+                    <input type="button" value="1" onclick=" hello.value += '1' ">
+                </div>
+                <div>
+                    <input type="button" value="2" onclick=" hello.value+='2' ">
+                </div>
+                <div>
+                    <input type="button" value="3" onclick=" hello.value += '3' ">
+                </div>
+                <div>
+                    <input type="button" value="+" onclick=" hello.value += '+' ">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <input type="button" value="4" onclick=" hello.value += '4' ">
+                </div>
+                <div>
+                    <input type="button" value="5" onclick=" hello.value += '5' ">
+                </div>
+                <div>
+                    <input type="button" value="6" onclick="hello.value += '6' ">
+                </div>
+                <div>
+                    <input type="button" value="-" onclick=" hello.value += '-' ">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <input type="button" value="7" onclick=" hello.value += '7' ">
+                </div>
+                <div>
+                    <input type="button" value="8" onclick=" hello.value += '8' ">
+                </div>
+                <div>
+                    <input type="button" value="9" onclick="hello.value += '9' ">
+                </div>
+                <div>
+                    <input type="button" value="*" onclick=" hello.value += '*' ">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <input type="button" value="." onclick=" hello.value += '.' ">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick=" hello.value += '0' ">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick=" hello.value += '00' ">
+                </div>
+                <div>
+                    <input type="button" value="/" onclick=" hello.value += '/' ">
+                </div>
+            </div>
+            <div class="row">
+                <input class="clear-button" type="button" value="Clear all" onclick=" hello.value = '' ">
+                <div>
+                    <input type="button" value="=" onclick="hello.value = eval(hello.value) ">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- <script src="calculator.js"></script> -->
+</body>
+
+</html>

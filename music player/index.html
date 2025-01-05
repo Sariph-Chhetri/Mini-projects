@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3240d57b77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="imageBox">
+            <div class="image">
+                <img src="thumbnail.png">
+                <h3>Despacito</h1>
+                <p>luoi Sachir Ft.Puerto Rickson</p>
+            </div>
+        <input type="range" id="progress">
+        </div>
+        <audio id="song">
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+               <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div  onclick="playPause()"><i class="fa-solid fa-play" id="playIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+               </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

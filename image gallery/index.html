@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img class="backbtn" src="/images/back.png">
+        <div class="main">
+            <div>
+                <span><img src="/images/image-1.png"></span>
+                <span><img src="/images/image-2.png"></span>
+                <span><img src="/images/image-3.png"></span>
+            </div>
+            <div>
+                <span><img src="/images/image-4.png"></span>
+                <span><img src="/images/image-5.png"></span>
+                <span><img src="/images/image-6.png"></span>
+            </div>
+        </div>
+            <img class="nextbtn" src="/images/next.png">
+    </div>
+    <script>
+        let scrollcontainer = document.querySelector(".main");
+        let leftscroll = document.querySelector(".backbtn");
+        let rightscroll = document.querySelector(".nextbtn");
+
+        scrollcontainer.addEventListener("wheel",(e)=>{
+            e.preventDefault();
+            scrollcontainer.scrollLeft += e.deltaY;
+           scrollcontainer.classList.remove("main1");
+        })
+
+        leftscroll.addEventListener("click",()=>{
+            scrollcontainer.scrollTo(-900,0);
+            scrollcontainer.classList.add("main1");
+        })
+        
+        rightscroll.addEventListener("click",()=>{
+           scrollcontainer.scrollTo(900,0);
+           scrollcontainer.classList.add("main1");
+        })
+
+    </script>
+</body>
+
+</html>
